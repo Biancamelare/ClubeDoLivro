@@ -6,4 +6,5 @@ Esse visa incentivar a procura do conhecimento e o hábito da leitura, sendo um 
 <br>
 <br>
 Projeto desenvolvimento na Disciplina de Web Design cursada no segundo semestre de Engenharia de Computação na Facens em 2022.
-<img src="imagens/logo.png" width="250" height="250"/>
+<br>
+<img align="center" src="imagens/logo.png" width="250" height="250"/>
