@@ -16,7 +16,7 @@ Projeto desenvolvimento na Disciplina de Web Design cursada no segundo semestre 
  </td>
  <td width="30%">
 <p align="center">
-<img src="imagens/logo.png" width="80%"/>
+<img src="imagens/logo.png" width="90%"/>
   </p>
    </td></tr>
 </table>
