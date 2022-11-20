@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href= "../CSS/styleLivros.css" rel="stylesheet">
+    <script src="../JS/scriptEstrela.js" defer></script>
+    <script src="../JS/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Clube do livro</title>
+</head>
+<body>
+    <header class="headerRow">
+        <div class="headerColum">
+            <img class="logo" src="../img/logos/logo.png" alt="imagem-logo"> 
+        </div>
+        <div class="headerRow">
+            <ul class=" headerRow list-items">
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="../HTML/eventos.html">Eventos Literários</a></li>
+                <li>|</li>
+                <li><a href="../HTML/roleta.html"> Roleta Literária</a></li>
+            </ul>
+        </div>
+        <div>
+        <div class="headerRow">
+                <input class="textoHeader" type="search" placeholder="  Pesquisar..." aria-label="Pesquisar">
+                <button class="imagemHeader lupa" type="submit"><img src="../img/logos/lupa.png" alt="imagem-lupa"></button>
+        </div>
+       </div>
+       <div>
+        <div class="headerRow">
+                <img class="imagemHeader user" src="../img/logos/user.png" alt="imagem-usuario"> 
+                <button  class="textoHeader" type="button">Entrar</button>
+        </div>
+       </div>
+   </header>
+    <main>
+     <section>
+            <div class="livroRow">
+                <div class="livroColumn">
+                    <div class="livroColumn">
+                         <img id="imgLivro" src="../img/capas/assimqueacaba.png" >
+                    </div>
+                    <div class="livroRow">
+                        <p class="texto classif">Classificação</p>
+                        <a href="javascript:void(0)" onclick="Avaliar(1)">
+                            <img src="../img/logos/star0.png" id="s1"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(2)">
+                            <img src="../img/logos/star0.png" id="s2"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(3)">
+                            <img src="../img/logos/star0.png" id="s3"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(4)">
+                            <img src="../img/logos/star0.png" id="s4"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(5)">
+                            <img src="../img/logos/star0.png" id="s5"></a>
+                            <p class="texto" id="rating">0</p>
+                    </div>
+                    <div >
+                       <a href="https://www.amazon.com.br/Assim-que-Acaba-Colleen-Hoover/dp/8501112518" target="_blank"> <button class="texto comprar"  type="submit">Onde Comprar</button></a>
+                    </div>
+                </div>
+                <div class="livroColumn">
+                    <div >
+                        <h3 id="titulo">É assim que acaba</h3>
+                        <div class="linha"></div>
+                    </div>
+                    <div id="texto">
+                        <div id="genero">
+                            <p>Romance</p>
+                        </div>
+                        <div>
+                            <p id="sinopse">O romance mais pessoal da carreira de Colleen Hoover, É assim que acaba discute temas como violência doméstica e abuso psicológico de forma sensível e direta.
+                                            Em É assim que acaba, Colleen Hoover nos apresenta Lily, uma jovem que se mudou de uma cidadezinha do Maine para Boston, se formou em marketing e abriu a própria floricultura. E é em um dos terraços de Boston que ela conhece Ryle, um neurocirurgião confiante, teimoso e talvez até um pouco arrogante, com uma grande aversão a relacionamentos, mas que se sente muito atraído por ela.
+                                            Quando os dois se apaixonam, Lily se vê no meio de um relacionamento turbulento que não é o que ela esperava. Mas será que ela conseguirá enxergar isso, por mais doloroso que seja?</p>
+                            <p id="sinopse">É assim que acaba é uma narrativa poderosa sobre a força necessária para fazer as escolhas certas nas situações mais difíceis. O livro aborda sem medo alguns tabus da sociedade para explorar a complexidade das relações tóxicas, e como o amor e o abuso muitas vezes coexistem em uma confusão de sentimentos.</p>
+                        </div>
+                    </div>
+                    <div id="autor">
+                        <img id="imgAutor" src="https://www.folhavitoria.com.br/geral/blogs/vem-ler-comigo/wp-content/uploads/2021/04/ETV63L5WkAAvzDP.jpg">
+                        <div id="autor1">
+                           <p id="nomeAutor">Colleen Hoover</p>
+                           <p id="infoAutor">É a autora best-seller do New York Times por trás de diversos livros, entre eles Verity,O lado feio do amor e Novembro, 9.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="infoLivro">
+                    <p id="ficha">Ficha técnica</p>
+                    <p class="pinfoLivro">Título original: <span class="sinfoLivro">It Ends With Us</span></p>
+                    <p class="pinfoLivro">Tradução: <span class="sinfoLivro">Priscila Catão</span></p>
+                    <p class="pinfoLivro">Páginas:<span class="sinfoLivro"> 368</span></p>
+                    <p class="pinfoLivro">Formato:<span class="sinfoLivro"> 21.00 X 13.6cm</span></p>
+                    <p class="pinfoLivro">Peso:<span class="sinfoLivro"> 380g</span></p>
+                    <p class="pinfoLivro">Acabamento:<span class="sinfoLivro">Livro brochura</span></p>
+                    <p class="pinfoLivro">Lançamento:<span class="sinfoLivro">18/01/2018</span></p>
+                    <p class="pinfoLivro">ISBN:<span class="sinfoLivro">9788501112514</span></p>
+                    <p class="pinfoLivro">Selo:<span class="sinfoLivro">Galera Record</span></p>        
+                </div>
+            </div>
+        </section>
+        <section>
+            <br>
+            <hr id="div">
+            <div id="videos">
+                <div class="livroColumn">
+                    <div>
+                        <h3 id="titulos2">Vídeos em Destaque</h3>
+                    </div>
+                    <div id="linha">
+                    </div>
+                </div>
+                <div id="videos2">
+                    <iframe  src="https://www.youtube.com/embed/tps1UI-iU9s" title="É ASSIM QUE ACABA 🌸 | O meu livro favorito da Colleen Hoover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  src="https://www.youtube.com/embed/6VQV55lY_fM" title="A construção da violência doméstica | É ASSIM QUE ACABA (It Ends With Us)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  src="https://www.youtube.com/embed/JbVh1wzu-Rc" title="EU RELI "É ASSIM QUE ACABA", DA COLLEEN HOOVER PARA VOCÊ NÃO TER QUE RELER!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+            </div>
+            <br>
+            <hr id="div">
+        </section>
+        <section class="row">
+            <div class="col">
+                <p id="comentario">Comentários</p>
+                <div id="form">
+                    <img id="user" src="../img/logos/userPreto.png" alt="foto usuário">
+                    <input id="coment" type="text" placeholder="Digite seu comentário... "> 
+                </div>
+                <textarea id="coment2">
+                </textarea>   
+            </div>
+        </section>
+    </main>
+
+    <footer class="containerColumn">
+        <div class="containerRow">
+            <div class="containerColumn">
+                <img class="logo" src="../img/logos/logo.png" alt="Clube do Livro">
+            </div>
+            <div class="containerColumn2" >
+              <p>Projeto desenvolvido na disciplina de Web Design do </p>
+              <p>Centro Universitário Facens. </p>
+              <p >Orientação: Prof° Angelina Vitorino de Souza Melaré</p>
+            </div>
+            <div class="containerColumn textorodape membros" >
+                <div class="membro">
+                    <p>Bianca Vitorino de Souza Melaré</p>
+                    <a href="https://www.linkedin.com/in/bianca-melar%C3%A9-ba1a89241/" target="_blank">
+                       <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/Biancamelare" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/github.png"> 
+                    </a>
+                </div>
+                <div class="membro">
+                    <p >Guilherme Massayuki Yokoda de Moraes</p>
+                    <a href="https://www.linkedin.com/in/guilherme-massayuki-3a8814257/" target="_blank"> 
+                       <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/Massayuki2213" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/github.png"> 
+                    </a>
+                </div>
+                <div class="membro">
+                    <p >Guilherme Tobias Piva</p>
+                    <a href="https://www.linkedin.com/in/guilherme-tobias-piva-25754822a/" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/guipiva" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/github.png">
+                     </a>
+                </div>
+                <div class="membro">
+                    <p >Isabelle Munhoz Scarso</p>
+                    <a href="https://www.linkedin.com/in/isabellescarso/" target="_blank">
+                       <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/isabellescarso" target="_blank">
+                       <img class="iconRedes" src="../img/logos/github.png"> 
+                    </a>
+                </div>
+              </div>
+        </div>
+        <div class="container textorodape">
+              <hr>
+              <p id="copy">CLUBE DO LIVRO &copy; 2022. TODOS OS DIREITOS RESERVADOS.</p>   
+        </div>
+      </footer>
+</body>
+</html>

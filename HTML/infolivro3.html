@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href= "../CSS/styleLivros.css" rel="stylesheet">
+    <script src="../JS/scriptEstrela.js" defer></script>
+    <script src="../JS/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Clube do livro</title>
+</head>
+<body>
+    <header class="headerRow">
+        <div class="headerColum">
+            <img class="logo" src="../img/logos/logo.png" alt="imagem-logo"> 
+        </div>
+        <div class="headerRow">
+            <ul class=" headerRow list-items">
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="../HTML/eventos.html">Eventos Literários</a></li>
+                <li>|</li>
+                <li><a href="../HTML/roleta.html"> Roleta Literária</a></li>
+            </ul>
+        </div>
+        <div>
+        <div class="headerRow">
+                <input class="textoHeader" type="search" placeholder="  Pesquisar..." aria-label="Pesquisar">
+                <button class="imagemHeader lupa" type="submit"><img src="../img/logos/lupa.png" alt="imagem-lupa"></button>
+        </div>
+       </div>
+       <div>
+        <div class="headerRow">
+                <img class="imagemHeader user" src="../img/logos/user.png" alt="imagem-usuario"> 
+                <button  class="textoHeader" type="button">Entrar</button>
+        </div>
+       </div>
+   </header>
+    <main>
+     <section>
+            <div class="livroRow">
+                <div class="livroColumn">
+                    <div class="livroColumn">
+                         <img id="imgLivro" src="../img/capas/heartstopper.jpg" >
+                    </div>
+                    <div class="livroRow">
+                        <p class="texto classif">Classificação</p>
+                        <a href="javascript:void(0)" onclick="Avaliar(1)">
+                            <img src="../img/logos/star0.png" id="s1"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(2)">
+                            <img src="../img/logos/star0.png" id="s2"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(3)">
+                            <img src="../img/logos/star0.png" id="s3"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(4)">
+                            <img src="../img/logos/star0.png" id="s4"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(5)">
+                            <img src="../img/logos/star0.png" id="s5"></a>
+                            <p class="texto" id="rating">0</p>
+                    </div>
+                    <div >
+                       <a href="https://www.amazon.com.br/Heartstopper-Dois-garotos-encontro-vol/dp/8555341612/ref=asc_df_8555341612/?tag=googleshopp00-20&linkCode=df0&hvadid=379728710386&hvpos=&hvnetw=g&hvrand=4279445486534123414&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001776&hvtargid=pla-1393573411881&psc=1" target="_blank"> <button class="texto comprar"  type="submit">Onde Comprar</button></a>
+                    </div>
+                </div>
+                <div class="livroColumn">
+                    <div >
+                        <h3 id="titulo">Heartstopper</h3>
+                        <div class="linha"></div>
+                    </div>
+                    <div id="texto">
+                        <div id="genero">
+                            <p>Romance</p>
+                        </div>
+                        <div>
+                            <p id="sinopse">O primeiro volume da adorada série em quadrinhos finalmente chega ao Brasil. A HQ que inspirou a série original da Netflix!</p>
+                            <p id="sinopse">Charlie Spring e Nick Nelson não têm quase nada em comum. Charlie é um aluno dedicado e bastante inseguro por conta do bullying que sofre no colégio desde que se assumiu gay. Já Nick é superpopular, especialmente querido por ser um ótimo jogador de rúgbi. Quando os dois passam a sentar um ao lado do outro toda manhã, uma amizade intensa se desenvolve, e eles ficam cada vez mais próximos.</p>
+                            <p id="sinopse">Charlie logo começa a se sentir diferente a respeito do novo amigo, apesar de saber que se apaixonar por um garoto hétero só vai gerar frustrações. Mas o próprio Nick está em dúvida sobre o que sente – e talvez os garotos estejam prestes a descobrir que, quando menos se espera, o amor pode funcionar das formas mais incríveis e surpreendentes.</p>
+                        </div>
+                    </div>
+                    <div id="autor">
+                        <img id="imgAutor" src="https://f.i.uol.com.br/fotografia/2022/06/25/165618760862b76ad8b8f19_1656187608_3x4_md.jpg">
+                        <div id="autor1">
+                           <p id="nomeAutor">Alice May Oseman</p>
+                           <p id="infoAutor">Escritora e ilustradora inglesa de ficção para jovens adultos. Sua primeira publicação foi em 2014.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="infoLivro">
+                    <p id="ficha">Ficha técnica</p>
+                    <p class="pinfoLivro">Título original: <span class="sinfoLivro"> Heartstopper</span></p>
+                    <p class="pinfoLivro">Tradução: <span class="sinfoLivro"> Guilherme Miranda</span></p>
+                    <p class="pinfoLivro">Páginas:<span class="sinfoLivro"> 288</span></p>
+                    <p class="pinfoLivro">Formato:<span class="sinfoLivro"> 15.50 X 22.50 cm</span></p>
+                    <p class="pinfoLivro">Peso:<span class="sinfoLivro">  0.741 kg</span></p>
+                    <p class="pinfoLivro">Acabamento:<span class="sinfoLivro"> Livro capa dura</span></p>
+                    <p class="pinfoLivro">Lançamento:<span class="sinfoLivro">14/09/2021</span></p>
+                    <p class="pinfoLivro">ISBN:<span class="sinfoLivro">9788555341618</span></p>
+                    <p class="pinfoLivro">Selo:<span class="sinfoLivro">Seguinte</span></p>        
+                </div>
+            </div>
+        </section>
+        <section>
+            <br>
+            <hr id="div">
+            <div id="videos">
+                <div class="livroColumn">
+                    <div>
+                        <h3 id="titulos2">Vídeos em Destaque</h3>
+                    </div>
+                    <div id="linha">
+                    </div>
+                </div>
+                <div id="videos2">
+                    <iframe  src="https://www.youtube.com/embed/_ZZulE5yuj4" title="Eu li todas as hqs de "Heartstopper e um dia e foi isso que eu achei..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  src="https://www.youtube.com/embed/Z7k3ICHvcIo" title="REAGINDO A HEARTSTOPPER: A série mais fofa do mundo inteirinho! ✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/GrSnt2PhkLE" title="Unboxing #1 - Heartstopper versão brasileira! (´ ω `♡)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+            </div>
+            <br>
+            <hr id="div">
+        </section>
+        <section class="row">
+            <div class="col">
+                <p id="comentario">Comentários</p>
+                <div id="form">
+                    <img id="user" src="../img/logos/userPreto.png" alt="foto usuário">
+                    <input id="coment" type="text" placeholder="Digite seu comentário... "> 
+                </div>
+                <textarea id="coment2">
+                </textarea>   
+            </div>
+        </section>
+    </main>
+
+    <footer class="containerColumn">
+        <div class="containerRow">
+            <div class="containerColumn">
+                <img class="logo" src="../img/logos/logo.png" alt="Clube do Livro">
+            </div>
+            <div class="containerColumn2" >
+              <p>Projeto desenvolvido na disciplina de Web Design do </p>
+              <p>Centro Universitário Facens. </p>
+              <p >Orientação: Prof° Angelina Vitorino de Souza Melaré</p>
+            </div>
+            <div class="containerColumn textorodape membros" >
+                <div class="membro">
+                    <p>Bianca Vitorino de Souza Melaré</p>
+                    <a href="https://www.linkedin.com/in/bianca-melar%C3%A9-ba1a89241/" target="_blank">
+                       <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/Biancamelare" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/github.png"> 
+                    </a>
+                </div>
+                <div class="membro">
+                    <p >Guilherme Massayuki Yokoda de Moraes</p>
+                    <a href="https://www.linkedin.com/in/guilherme-massayuki-3a8814257/" target="_blank"> 
+                       <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/Massayuki2213" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/github.png"> 
+                    </a>
+                </div>
+                <div class="membro">
+                    <p >Guilherme Tobias Piva</p>
+                    <a href="https://www.linkedin.com/in/guilherme-tobias-piva-25754822a/" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/guipiva" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/github.png">
+                     </a>
+                </div>
+                <div class="membro">
+                    <p >Isabelle Munhoz Scarso</p>
+                    <a href="https://www.linkedin.com/in/isabellescarso/" target="_blank">
+                       <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/isabellescarso" target="_blank">
+                       <img class="iconRedes" src="../img/logos/github.png"> 
+                    </a>
+                </div>
+              </div>
+        </div>
+        <div class="container textorodape">
+              <hr>
+              <p id="copy">CLUBE DO LIVRO &copy; 2022. TODOS OS DIREITOS RESERVADOS.</p>   
+        </div>
+      </footer>
+</body>
+</html>

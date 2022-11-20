@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta Literária</title>
+    <link rel="stylesheet" type="text/css"  href="../CSS/styleroleta.css">
+    <script src="../JS/scriptroleta.js" defer></script>
+</head>
+<body>  
+    <header class="headerRow">
+        <div class="headerColum">
+            <img class="logo" src="../img/logos/logo.png" alt="imagem-logo"> 
+        </div>
+        <div class="headerRow">
+            <ul class=" headerRow list-items">
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="../HTML/eventos.html">Eventos Literários</a></li>
+                <li>|</li>
+                <li><a href="../HTML/roleta.html"> Roleta Literária</a></li>
+            </ul>
+        </div>
+        <div>
+        <div class="headerRow">
+                <input class="textoHeader" type="search" placeholder="  Pesquisar..." aria-label="Pesquisar">
+                <button class="imagemHeader lupa" type="submit"><img src="../img/logos/lupa.png" alt="imagem-lupa"></button>
+        </div>
+       </div>
+       <div>
+        <div class="headerRow">
+                <img class="imagemHeader user" src="../img/logos/user.png" alt="imagem-usuario"> 
+                <button  class="textoHeader" type="button">Entrar</button>
+        </div>
+       </div>
+   </header>
+   <h3>Roleta Literária</h3>
+   <hr id="linha">
+   <h2>Gire a roleta e descubra qual será sua próxima leitura!</h2>
+    <div id="cardRoleta" >
+        <div class="folha">
+            <div class="seta"  ></div>
+            <div class="roleta" id="roleta">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"></div>
+                <div class="box6"></div>
+                <div class="box7"></div>
+                <div class="box8"></div>
+                
+                <div class="premio premio1" id="opt1">Harry Potter</div>
+                <div class="premio premio2" id="opt0">O Hobbit</div>
+                <div class="premio premio3" id="opt7">Crepúsculo</div>
+                <div class="premio premio4" id="opt6">Maze Runner</div>
+                <div class="premio premio5" id="opt5" >Senhor dos anéis</div>
+                <div class="premio premio6" id="opt4" >Jogos Vorazes</div>
+                <div class="premio premio7" id="opt3" >It a coisa</div>
+                <div class="premio premio8" id="opt2" >Heartstopper</div>
+                <div id="btnPlay" class="btnRoleta play" onclick="playOnClick()"></div>
+                <div id="btnStop" class="btnRoleta stop" onclick="stopOnClick()"></div>
+            </div>
+        </div>
+        <p id="msgGanhador"></p>
+    </div>
+    <br>
+    <br>
+    <footer class="containerColumn">
+        <div class="containerRow">
+            <div class="containerColumn">
+                <img class="logo" src="../img/logos/logo.png" alt="Clube do Livro">
+            </div>
+            <div class="containerColumn2" >
+              <p>Projeto desenvolvido na disciplina de Web Design do </p>
+              <p>Centro Universitário Facens. </p>
+              <p >Orientação: Prof° Angelina Vitorino de Souza Melaré</p>
+            </div>
+            <div class="containerColumn textorodape membros" >
+                <div class="membro">
+                    <p>Bianca Vitorino de Souza Melaré</p>
+                    <a href="https://www.linkedin.com/in/bianca-melar%C3%A9-ba1a89241/" target="_blank">
+                       <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/Biancamelare" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/github.png"> 
+                    </a>
+                </div>
+                <div class="membro">
+                    <p >Guilherme Massayuki Yokoda de Moraes</p>
+                    <a href="https://www.linkedin.com/in/guilherme-massayuki-3a8814257/" target="_blank"> 
+                       <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/Massayuki2213" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/github.png"> 
+                    </a>
+                </div>
+                <div class="membro">
+                    <p >Guilherme Tobias Piva</p>
+                    <a href="https://www.linkedin.com/in/guilherme-tobias-piva-25754822a/" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/guipiva" target="_blank"> 
+                      <img class="iconRedes" src="../img/logos/github.png">
+                     </a>
+                </div>
+                <div class="membro">
+                    <p >Isabelle Munhoz Scarso</p>
+                    <a href="https://www.linkedin.com/in/isabellescarso/" target="_blank">
+                       <img class="iconRedes" src="../img/logos/linkedin.png"> </a>
+                    <a href="https://github.com/isabellescarso" target="_blank">
+                       <img class="iconRedes" src="../img/logos/github.png"> 
+                    </a>
+                </div>
+              </div>
+        </div>
+        <div class="container textorodape">
+              <hr>
+              <p id="copy">CLUBE DO LIVRO &copy; 2022. TODOS OS DIREITOS RESERVADOS.</p>   
+        </div>   
+    </footer>
+</body>
+</html>
