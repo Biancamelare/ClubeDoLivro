@@ -1,0 +1,243 @@
+header
+{
+    background-color: #3B3F66;
+    color: #FFFFFF;
+}
+
+header .list-items
+{
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 18px;
+    
+    margin-top: 10px;
+  
+}
+
+ul
+{
+    list-style-type: none;   
+    margin: 0;  
+    padding: 0;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+}
+
+ul li a:hover
+{
+    color: #ECDEC0;
+
+}
+
+.headerRow
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.headerColum
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;  
+}
+
+.logo 
+{
+    margin-top: 10px !important;
+    width: 7em;
+}
+
+
+.textoHeader
+{
+    font-family: 'Roboto Slab', serif;
+    border-radius: 15px;
+    border-color: #3B3F66;
+    padding-right: 10px;
+    background-color: #FFFFFF;
+    color: #010626;
+    padding-left: 10px;
+}
+
+.imagemHeader
+{
+    background-color: #3B3F66;
+    border: none;
+    border-color: #3B3F66;
+    border-radius: 50%; 
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.lupa
+{
+    width: 1.8em;
+}
+
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#div
+{
+    border: 3px solid #ECDEC0;
+}
+.titulolivros{
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 22px;    
+    color: #010626;
+    margin-left: 15px;
+}
+
+.livros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+}
+
+.imgLivros{
+    width: 151px;
+    height: 197px;
+    margin: 10px;
+    background-color: rgba(236, 222, 192, 0.5);
+    padding: 10px;
+}
+
+.imgAutores
+{
+    width: 151px;
+    height: 197px;
+    margin: 10px;
+    padding: 10px;
+    filter: grayscale();
+}
+
+.imgAutores:hover{
+    filter: none;
+    width: 15%;
+    height: auto;
+    border-radius: 50%;  
+}
+
+.famosos, .vestibulares, .autores, .lancamentos, .classicos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5px;
+}
+
+footer{
+    width: 100%;
+    background: #3B3F66;
+    color: #FFFFFF;
+}
+
+
+.containerRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.containerColumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.containerColumn2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+}
+
+.containerColumn2 p{
+    margin-bottom: 0px;
+}
+
+
+.membros{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}
+
+.membro{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: right;
+}
+
+.membro p{
+    margin: 0px;
+    padding-right: 10px;
+}
+
+.iconRedes{
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 10px;
+}
+
+.textorodape{
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0px;  
+}
+
+#copy{
+    text-align: left;
+}
+
+#imgcarousel{
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+

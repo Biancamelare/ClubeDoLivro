@@ -1,0 +1,399 @@
+
+#cardRoleta{
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.roleta {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.folha {
+  background-color: #ffffff00;
+  width: 600px; 
+  height: 600px;
+}
+
+.seta {
+  margin-left: 50%;
+  border-bottom: 0px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #33c9dc;
+  width: 0;
+  height: 0;
+  animation: animacaoSeta .35s linear infinite;
+}
+
+path {
+fill: transparent;
+}
+
+
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8 {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.box1 {
+  border-top: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid #f6685e;
+  border-left: 150px solid #f6685e;
+}
+.box5 {
+  border-top: 150px solid #e91e63;
+  border-right: 150px solid #e91e63;
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid transparent;
+}
+.box2 {
+  border-top: 150px solid #9c27b0;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid #9c27b0;
+  left: 50%;
+}
+.box6 {
+  border-top: 150px solid transparent;
+  border-right: 150px solid #673ab7;
+  border-bottom: 150px solid #673ab7;
+  border-left: 150px solid transparent;
+  left: 50%
+}
+.box4 {
+  border-top: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid #2196f3;
+  border-left: 150px solid #2196f3;
+  top: 50%;
+  left: 50%;
+}
+
+.box8 {
+  border-top: 150px solid #34399d;
+  border-right: 150px solid #34399d;
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid transparent;
+  top: 50%;
+  left: 50%;
+}
+.box3 {
+  border-top: 150px solid #009688;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid #009688;
+  top: 50%;
+}
+.box7 {
+  border-top: 150px solid transparent;
+  border-right: 150px solid #ffeb3b;
+  border-bottom: 150px solid #ffeb3b;
+  border-left: 150px solid transparent;
+  top: 50%;
+}
+
+@keyframes roleta {
+  0% {
+      transform: rotate(0deg)
+  }
+
+  100% {
+      transform: rotate(360deg)
+  }
+}
+@keyframes animacaoSeta {
+  0% { transform: rotate(0deg)}
+  25% { transform: rotate(-15deg)}
+  75% { transform: rotate(15deg)}
+  100% { transform: rotate(0deg)}
+}
+
+.premio {
+  position: absolute;
+  z-index: 999;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+.premio1 {
+  top: 35%;
+  left: 8%;
+  transform: rotate(25deg);
+}
+.premio2 {
+  top: 18%;
+  left: 27%;
+  transform: rotate(70deg);
+}
+.premio3 {
+  top: 20%;
+  left: 50%;
+  transform: rotate(116deg);
+}
+.premio4 {
+  top: 35%;
+  right: 9%;
+  transform: rotate(155deg);
+}
+.premio5 {
+  top: 59%;
+  right: 7%;
+  transform: rotate(204deg);
+}
+.premio6 {
+  top: 75%;
+  right: 25%;
+  transform: rotate(245deg);
+}
+.premio7 {
+  top: 80%;
+  left: 27%;
+  transform: rotate(295deg);
+}
+.premio8 {
+  top: 60%;
+  left: 10%;
+  transform: rotate(333deg);
+}
+
+#msgGanhador
+{
+  font-family: 'Roboto';
+  color: #010626;
+  font-size: 20px;
+  font-weight: bold;
+  top: 60%;
+}
+
+.btnRoleta {
+  position: absolute;
+  color: white;
+  background-color: rgb(253, 4, 4);
+  border: 15px solid #000;
+  cursor: pointer;
+  top:45%;
+  left: 45%;
+  font-size: 35px;
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  text-align: center;
+}
+.play {
+  z-index: 999;
+}
+.stop {
+  animation-play-state: paused;
+}
+
+h3
+{
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 30px;
+    color: #010626;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+h2
+{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 22px;
+    color: #010626;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#linha
+{
+  margin-top: 0px;
+  margin-bottom: 15px;
+  width: 230px;
+  height: 5px;
+  background-color:#ECDEC0 ;
+  border: #ECDEC0;
+}
+
+footer{
+  width: 100%;
+  background: #3B3F66;
+  color: #FFFFFF;
+}
+
+.containerRow{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.containerColumn{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.containerColumn2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+}
+
+.containerColumn2 p{
+  margin-bottom: 0px;
+}
+
+.membros{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+
+.membro{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  justify-content: right;
+}
+
+.membro p{
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.marginZero{
+  margin: 0px;
+}
+
+.iconRedes{
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 10px;
+}
+
+.textorodape{
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 0px;  
+}
+
+#copy{
+  text-align: left;
+}
+
+.logo {
+  margin-top: 15px !important;
+  width: 7em;
+}
+
+header
+{
+    background-color: #3B3F66;
+    color: #FFFFFF;
+}
+
+header .list-items
+{
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+ul
+{
+    list-style-type: none;   
+    margin: 0;  
+    padding: 0;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+}
+
+ul li a:hover
+{
+    color: #ECDEC0;
+
+}
+
+.headerRow
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.headerColum
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;  
+}
+
+.logo 
+{
+    margin-top: 10px !important;
+    width: 7em;
+}
+
+
+.textoHeader
+{
+    font-family: 'Roboto Slab', serif;
+    border-radius: 15px;
+    border-color: #3B3F66;
+    padding-right: 10px;
+    background-color: #FFFFFF;
+    color: #010626;
+    padding-left: 10px;
+}
+
+.imagemHeader
+{
+    background-color: #3B3F66;
+    border: none;
+    border-color: #3B3F66;
+    border-radius: 50%; 
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.lupa
+{
+    width: 1.8em;
+}
