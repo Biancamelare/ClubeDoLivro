@@ -16,7 +16,7 @@ Projeto desenvolvimento na Disciplina de Web Design cursada no segundo semestre 
  <strong>Orientação:</strong> Prof° Angelina Vitorino de Souza Melaré
 <br>
 <hr>
-<h5>Acesse o site:</h5> https://biancamelare.github.io/ClubeDoLivro/
+<h3>Acesse o site:</h3> https://biancamelare.github.io/ClubeDoLivro/
 <br><br>
  </td>
  <td width="30%">
