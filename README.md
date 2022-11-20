@@ -8,6 +8,7 @@ Esse visa incentivar a procura do conhecimento e o hábito da leitura, sendo um 
 <br>
 <br>
 Projeto desenvolvimento na Disciplina de Web Design cursada no segundo semestre de Engenharia de Computação na Facens em 2022.
+ <strong>Orientação:</strong> Prof° Angelina Vitorino de Souza Melaré
 <br>
 <br>
  </td>
